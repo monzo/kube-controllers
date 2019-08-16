@@ -10,7 +10,7 @@ import:
 - package: k8s.io/apiserver
   version: 7001bc4df8883d4a0ec84cd4b2117655a0009b6c
 - package: k8s.io/apimachinery
-  version: release-1.8
+  version: 40eaf68ee1889b1da1c528b1a075ecfe94e66837
 - package: k8s.io/api
   version: release-1.8
   subpackages:
@@ -31,7 +31,8 @@ import:
   - tools/cache
   - tools/clientcmd
 - package: github.com/projectcalico/libcalico-go
-  version: release-v3.1
+  repo: https://github.com/monzo/libcalico-go.git
+  version: warn
 - package: github.com/projectcalico/felix
   version: 518dbc352494a962e46d50f8bfe72a70c86951bf
   subpackages:
