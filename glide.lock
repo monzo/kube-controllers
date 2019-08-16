@@ -1,5 +1,5 @@
-hash: 0421827a29ec016a36369710e537e5cdd36a3dd1218de42eca0200828078c191
-updated: 2018-08-09T04:14:55.390782627Z
+hash: c48fb889720474db0be92847364442e28f72e8472d98b4a34bdb749352a945c9
+updated: 2019-08-16T19:23:33.608609+01:00
 imports:
 - name: cloud.google.com/go
   version: 3b1ae45394a234c385be014e9a488f2bb6eef821
@@ -44,8 +44,6 @@ imports:
   version: d2709f9f1f31ebcda9651b03077758c1f3a0018c
 - name: github.com/ghodss/yaml
   version: 0ca9ea5df5451ffdf184b4428c902747c2c11cd7
-- name: github.com/go-ini/ini
-  version: d58d458bec3cb5adec4b7ddb41131855eac0b33f
 - name: github.com/gogo/protobuf
   version: 342cbe0a04158f6dcb03ca0079991a51a4248c02
   subpackages:
@@ -75,7 +73,7 @@ imports:
   - compiler
   - extensions
 - name: github.com/gophercloud/gophercloud
-  version: 781450b3c4fcb4f5182bcc5133adb4b2e4a09d1d
+  version: 443743e88335413103dcf1997e46d401b264fbcd
   subpackages:
   - openstack
   - openstack/identity/v2/tenants
@@ -91,21 +89,12 @@ imports:
   version: a0d98a5f288019575c6d1f4bb1573fef2d1fcdc4
   subpackages:
   - simplelru
-- name: github.com/hpcloud/tail
-  version: a1dbeea552b7c8df4b542c66073e393de198a800
-  subpackages:
-  - ratelimiter
-  - util
-  - watch
-  - winfile
 - name: github.com/imdario/mergo
   version: 6633656539c1639d9d78127b7d47c622b5d7b6dc
 - name: github.com/json-iterator/go
   version: f2b4162afba35581b6d4a50d3b8f34e33c144682
-- name: github.com/kardianos/osext
-  version: ae77be60afb1dcacde03767a8c37337fad28ac14
 - name: github.com/kelseyhightower/envconfig
-  version: dd1402a4d99de9ac2f396cd6fcb957bc2c695ec1
+  version: f611eb38b3875cc3bd991ca91c51d06446afa14c
 - name: github.com/matttproud/golang_protobuf_extensions
   version: fc2b8d3a73c4867e51861bbdd5ae3c1f0869dd6a
   subpackages:
@@ -115,7 +104,7 @@ imports:
 - name: github.com/modern-go/reflect2
   version: 05fbef0ca5da472bbf96c9322b84a53edc03c9fd
 - name: github.com/onsi/ginkgo
-  version: 3774a09d95489ccaa16032e0770d08ea77ba6184
+  version: f40a49d81e5c12e90400620b6242fb29a8e7c9d9
   subpackages:
   - config
   - internal/codelocation
@@ -135,7 +124,7 @@ imports:
   - reporters/stenographer/support/go-isatty
   - types
 - name: github.com/onsi/gomega
-  version: b6ea1ea48f981d0f615a154a45eabb9dd466556d
+  version: 90e289841c1ed79b7a598a7cd9959750cb5e89e2
   subpackages:
   - format
   - internal/assertion
@@ -149,29 +138,16 @@ imports:
   - matchers/support/goraph/util
   - types
 - name: github.com/patrickmn/go-cache
-  version: 9f6ff22cfff829561052f5886ec80a2ac148b4eb
+  version: 5633e0862627c011927fa39556acae8b1f1df58a
 - name: github.com/pborman/uuid
   version: ca53cad383cad2479bbba7f7a1a05797ec1386e4
 - name: github.com/peterbourgon/diskv
   version: 5f041e8faa004a95c88a202771f4cc3e991971e6
 - name: github.com/projectcalico/felix
-  version: 0ff3c42a9911847456bb0ea13c09f775a7dbf506
+  version: 518dbc352494a962e46d50f8bfe72a70c86951bf
   subpackages:
-  - calc
-  - config
-  - dispatcher
   - fv/containers
   - fv/utils
-  - hashutils
-  - ip
-  - ipsets
-  - iptables
-  - labelindex
-  - markbits
-  - multidict
-  - proto
-  - rules
-  - stringutils
 - name: github.com/projectcalico/go-json
   version: 6219dc7339ba20ee4c57df0a8baac62317d19cb1
   subpackages:
@@ -181,7 +157,8 @@ imports:
 - name: github.com/projectcalico/go-yaml-wrapper
   version: 598e54215bee41a19677faa4f0c32acd2a87eb56
 - name: github.com/projectcalico/libcalico-go
-  version: cac4ce6d0f2f1fdcaac2dcbe613374465cfd4953
+  version: e0fa48555ecd032563d19fae8ed9b3b3fb633982
+  repo: https://github.com/monzo/libcalico-go.git
   subpackages:
   - lib/apiconfig
   - lib/apis/v1
@@ -197,7 +174,6 @@ imports:
   - lib/clientv3
   - lib/errors
   - lib/hash
-  - lib/health
   - lib/ipam
   - lib/ipip
   - lib/logutils
@@ -212,7 +188,6 @@ imports:
   - lib/selector/tokenizer
   - lib/set
   - lib/testutils
-  - lib/validator/v1
   - lib/validator/v3
   - lib/watch
 - name: github.com/prometheus/client_golang
@@ -338,14 +313,10 @@ imports:
   - status
   - tap
   - transport
-- name: gopkg.in/fsnotify/fsnotify.v1
-  version: c2828203cd70a50dcccfb2761f8b1f8ceef9a8e9
 - name: gopkg.in/go-playground/validator.v8
-  version: 5f1438d3fca68893a817e4a66806cea46a9e4ebf
+  version: 5f57d2222ad794d0dffb07e664ea05e2ee07d60c
 - name: gopkg.in/inf.v0
   version: 3887ee99ecf07df5b447e9b00d9c0b2adaa9f3e4
-- name: gopkg.in/tomb.v1
-  version: c131134a1947e9afd9cecfe11f4c6dff0732ae58
 - name: gopkg.in/yaml.v2
   version: cd8b52f8269e0feb286dfeef29f8fe4d5b397e0b
 - name: k8s.io/api
@@ -424,14 +395,16 @@ imports:
   - pkg/watch
   - third_party/forked/golang/reflect
 - name: k8s.io/apiserver
-  version: 55fc0ea59fbeb78bebf981320bea0f7bbe3a161c
+  version: 7001bc4df8883d4a0ec84cd4b2117655a0009b6c
   subpackages:
+  - pkg/features
   - pkg/storage
   - pkg/storage/etcd
   - pkg/storage/etcd/metrics
   - pkg/storage/etcd/util
   - pkg/storage/etcd3
   - pkg/storage/value
+  - pkg/util/feature
   - pkg/util/trace
 - name: k8s.io/client-go
   version: 7d04d0e2a0a1a4d4a1cd6baa432a2301492e4e65

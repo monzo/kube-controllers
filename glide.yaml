@@ -10,11 +10,14 @@ import:
 - package: github.com/kelseyhightower/envconfig
 - package: github.com/onsi/gomega
 - package: github.com/patrickmn/go-cache
+- package: github.com/json-iterator/go
+  version: f2b4162afba35581b6d4a50d3b8f34e33c144682
 - package: github.com/projectcalico/felix
   subpackages:
   - fv/containers
 - package: github.com/projectcalico/libcalico-go
-  version: cac4ce6d0f2f1fdcaac2dcbe613374465cfd4953
+  repo: https://github.com/monzo/libcalico-go.git
+  version: warn-3.2.3
   subpackages:
   - lib/apiconfig
   - lib/apis/v3
